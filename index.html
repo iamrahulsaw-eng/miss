@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Rahul &bull; For My Mini | Dil Ki Baat &bull; An Unmasked Love Story</title>
+  <meta name="description" content="A cinematic motion-graphics Hinglish love letter and emotional sanctuary crafted by Rahul for his beloved Mini with deepest respect and love.">
+  
+  <!-- Premium Modern & Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Syne:wght@500;700;800&family=Caveat:wght@500;700&family=Rozha+One&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-obsidian">
+
+  <!-- Interactive Custom Glow Cursor (Desktop) -->
+  <div class="custom-cursor" id="customCursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Dynamic Background Canvas (Constellation & Aurora Mesh) -->
+  <canvas id="bgCanvas" class="bg-canvas"></canvas>
+
+  <!-- YouTube Iframe Embed (Hidden & Handled via YouTube API) -->
+  <div id="youtubePlayerWrap" class="youtube-player-wrap">
+    <div id="ytAudioPlayer"></div>
+  </div>
+
+  <!-- CINEMATIC PRELOADER (SILENT ENTRY) -->
+  <div class="cinematic-loader" id="cinematicLoader">
+    <div class="loader-content">
+      <div class="loader-monogram">
+        <span class="monogram-letter letter-r">R</span>
+        <div class="monogram-heart">&hearts;</div>
+        <span class="monogram-letter letter-m">M</span>
+      </div>
+      <div class="loader-names">RAHUL &bull; MINI</div>
+      <div class="loader-line-track">
+        <div class="loader-line-fill" id="loaderLineFill"></div>
+      </div>
+      <p class="loader-quote" id="loaderQuote">"In 3 dino ki khamoshi ne mujhe meri asliyat dikha di Mini..."</p>
+      
+      <button class="enter-universe-btn" id="enterUniverseBtn">
+        <span>Enter Our Universe &bull; Dil Ki Baat Padhein</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- STICKY GLASS NAVIGATION -->
+  <header class="motion-nav" id="motionNav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand magnetic" id="navBrand">
+        <span class="brand-glow-pulse"></span>
+        <span class="brand-title">RAHUL &hearts; MINI</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link">Pyaar</a>
+        <a href="#specialPhotoSection" class="nav-link special-nav-link">Aapka Haath</a>
+        <a href="#memories" class="nav-link">Yaadein</a>
+        <a href="#letter" class="nav-link">Dil Ki Baat</a>
+        <a href="#vows" class="nav-link">Vaade</a>
+        <a href="#musicFinale" class="nav-link music-highlight-nav">🎵 3 Days Song</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-switch-btn" id="themeSwitchBtn" title="Toggle Mode" aria-label="Toggle Theme">
+          <span class="theme-icon">✦</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Top Scroll Bar -->
+    <div class="scroll-track">
+      <div class="scroll-fill" id="scrollFill"></div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <main class="content-wrapper">
+
+    <!-- =================================================================
+         HERO SECTION: 3D FLOATING KINETIC STAGE (RESPECTFUL HINGLISH)
+         ================================================================= -->
+    <section class="hero-stage" id="hero">
+      <div class="hero-ambient-glow glow-1"></div>
+      <div class="hero-ambient-glow glow-2"></div>
+
+      <div class="container hero-grid">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-text-side">
+          
+          <div class="motion-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">MERI PYARI MINI KE LIYE &bull; AN UNFILTERED CONFESSION</span>
+          </div>
+
+          <h1 class="hero-headline">
+            <span class="hero-line"><span class="reveal-text">Mini, aapke bina</span></span>
+            <span class="hero-line"><span class="reveal-text gradient-glow">mera koi wajood</span></span>
+            <span class="hero-line italic-serif"><span class="reveal-text">nahi hai.</span></span>
+          </h1>
+
+          <!-- Heartfelt Opening Shayari (Aap Tone) -->
+          <div class="hero-shayari-card">
+            <p class="shayari-line">&ldquo;Aapke bina saans lena bhi ek bojh sa lagta hai,</p>
+            <p class="shayari-line">Har aaina mujhe ab be-wajah sa lagta hai...</p>
+            <p class="shayari-line">In 3 dino mein samajh aayi Mini aapki keemat,</p>
+            <p class="shayari-line">Aap na ho toh poora jahan khokhla sa lagta hai.&rdquo;</p>
+            <span class="shayari-by">&mdash; Aapka 11th Class Wala Rahul</span>
+          </div>
+
+          <p class="hero-lead">
+            In 3 dino ki khamoshi ne mera corporate mask tod diya. Office ke jhooth, fake busy-ness aur numbness jal gayi. 
+            Mujhe meri asliyat pata chal gayi hai: <strong>Main sirf aur sirf apni Mini ke bina adhoora hoon.</strong>
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#specialPhotoSection" class="btn-glow-primary magnetic">
+              <span>Aapka Haath Thaamna</span>
+              <div class="btn-shimmer"></div>
+            </a>
+            <a href="#musicFinale" class="btn-ghost magnetic">
+              <span>Listen Song at the End 🎵</span>
+            </a>
+          </div>
+
+          <!-- Live Reflection Counter Cards -->
+          <div class="time-metrics-grid">
+            <div class="metric-glass-card">
+              <span class="metric-val" id="metricHours">72</span>
+              <span class="metric-lbl">GHANTE MINI KE BINA</span>
+              <span class="metric-desc">Har ek pal mein sirf aapka intezaar</span>
+            </div>
+            <div class="metric-glass-card">
+              <span class="metric-val">11th</span>
+              <span class="metric-lbl">CLASS WALA PYAAR</span>
+              <span class="metric-desc">Puraana be-parwah Rahul wapas hai</span>
+            </div>
+            <div class="metric-glass-card glow-card">
+              <span class="metric-val">&infin;</span>
+              <span class="metric-lbl">ZINDAGI BHAR KA SAATH</span>
+              <span class="metric-desc">Har dard mein aapka haath mere haath mein</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual Stage / Real Photos -->
+        <div class="hero-visual-side">
+          <div class="orbit-stage" id="orbitStage">
+            
+            <!-- Center Hero Card: The Origin of Rahul & Mini -->
+            <div class="orbit-card card-center tilt-card" data-tilt-intensity="15">
+              <div class="card-inner">
+                <div class="card-photo-wrap">
+                  <img src="assets/photo_4.jpg" alt="Rahul and Mini in their younger days" class="card-img" id="heroMainPhoto">
+                  <div class="photo-glow-overlay"></div>
+                </div>
+                <div class="card-meta">
+                  <span class="tag-live">RAHUL &hearts; MINI</span>
+                  <p class="meta-caption">"Jahan se hamara be-panaah ishq shuru hua tha..."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Satellite Card 1: Car Rides -->
+            <div class="orbit-card satellite-1 tilt-card" data-tilt-intensity="25">
+              <img src="assets/photo_1.jpg" alt="Rahul and Mini in the car laughing" class="sat-img">
+              <span class="sat-label">Hansi &amp; Long Drives</span>
+            </div>
+
+            <!-- Floating Satellite Card 2: Traditional Elegance -->
+            <div class="orbit-card satellite-2 tilt-card" data-tilt-intensity="25">
+              <img src="assets/photo_3.jpg" alt="Rahul and Mini dressed up in festive attire" class="sat-img">
+              <span class="sat-label">Hamara Shahi Andaaz</span>
+            </div>
+
+            <!-- Floating Satellite Card 3: Leaning on Shoulder -->
+            <div class="orbit-card satellite-3 tilt-card" data-tilt-intensity="25">
+              <img src="assets/photo_2.jpg" alt="Mini resting on Rahul's shoulder at night" class="sat-img">
+              <span class="sat-label">Mera Kaandha, Aapka Ghar</span>
+            </div>
+
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator Wave -->
+      <a href="#specialPhotoSection" class="scroll-indicator" aria-label="Scroll down">
+        <div class="mouse-wheel">
+          <div class="mouse-dot"></div>
+        </div>
+        <span class="scroll-text">SCROLL KIJIYE MINI</span>
+      </a>
+    </section>
+
+    <!-- =================================================================
+         SPECIAL SPOTLIGHT SECTION: AAPKA HAATH, MERI DUNIYA
+         ================================================================= -->
+    <section class="special-photo-section" id="specialPhotoSection">
+      <div class="spotlight-aurora-bg"></div>
+      
+      <div class="container">
+        
+        <div class="special-box-glow">
+          
+          <div class="special-badge-wrap">
+            <span class="special-badge pulse-aura">✦ THE SACRED TOUCH &bull; MINI &amp; RAHUL ✦</span>
+          </div>
+
+          <h2 class="special-title">Aapka Haath, Meri Poori Zindagi</h2>
+          <p class="special-intro">
+            Mini, jab aapka yeh narm haath mere haath mein hota hai, toh mujhe lagta hai meri poori duniya mere paas hai.
+          </p>
+
+          <div class="special-layout-grid">
+            
+            <!-- The Hand Photo with glowing frame -->
+            <div class="special-photo-frame tilt-card" data-tilt-intensity="12">
+              <div class="photo-glow-border"></div>
+              <img src="assets/photo_special_hand.jpg" alt="Mini holding coconut and tightly holding Rahul's hand" class="special-img" id="specialHandImg">
+              <div class="photo-live-tag">
+                <span class="live-dot"></span>
+                <span>AAPKA HAATH MERE HAATH MEIN</span>
+              </div>
+            </div>
+
+            <!-- The Emotional Story & Shayari for This Photo (Aap Tone) -->
+            <div class="special-narrative-card">
+              
+              <div class="special-shayari-block">
+                <div class="shayari-quote-mark">&ldquo;</div>
+                <p class="shayari-verse">Jab thaam leti hain aap mera haath is tarah se,</p>
+                <p class="shayari-verse">Lagta hai mil gayi ho jannat kisi duaa ke asar se...</p>
+                <p class="shayari-verse">Ab kisi aur manzil ki mujhe koi chaahat nahi,</p>
+                <p class="shayari-verse">Meri har subah, har raat gujre sirf aapke sheher mein.</p>
+                <div class="shayari-author">&mdash; Rahul for Mini</div>
+              </div>
+
+              <div class="special-confession-text">
+                <p>
+                  Yeh tasveer mere dil ke sabse kareeb hai Mini. Aap coconut peete hue aage dekh rahi hain, aur bina soche, bina shart ke, aapne mera haath itni shiddat se pakad rakha hai.
+                </p>
+                <p>
+                  Jab aapka narm haath mere haath mein hota hai na, toh mujhe lagta hai duniya ka koi toofan, koi takleef, koi tension mujhe hila nahi sakti. Is haath ko thaamna hi meri zindagi ka sabse bada maksad hai.
+                </p>
+                <p class="special-bold-climax">
+                  Aur main vaada karta hoon Mini: Aakhri saans tak yeh haath kabhi nahi chhootega.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION 02: 3D MOTION PHOTO GALLERY & YAADEIN
+         ================================================================= -->
+    <section class="memories-section" id="memories">
+      <div class="container">
+        
+        <div class="section-header center">
+          <div class="motion-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">HAMARI KAHANI KE PAL</span>
+          </div>
+          <h2 class="section-title">Woh Pal Jo Sirf Hamare Hain</h2>
+          <p class="section-sub">
+            11th class ke late-night calls se lekar, pagalpan bhari drives aur shahi libaas tak... har tasveer mein hamari mohabbat ki gawaahi hai.
+          </p>
+        </div>
+
+        <!-- 3D Interactive Grid with Perspective Tilt -->
+        <div class="moments-grid">
+          
+          <!-- Memory 01: 11th Call Wala Rahul -->
+          <div class="moment-card tilt-card" data-photo="assets/photo_4.jpg" data-title="11th Call Wala Rahul &amp; Mini" data-desc="Hamari shuruat. Jab hum ghanton phone par baatein karte the aur raat kab subah ban jaati thi pata hi nahi chalta tha. Koi office ka stress nahi, koi mask nahi, bas Rahul apni Mini par fida tha.">
+            <div class="moment-glass">
+              <div class="moment-img-container">
+                <img src="assets/photo_4.jpg" alt="Rahul and Mini in youth" class="moment-img" loading="lazy">
+                <div class="moment-overlay">
+                  <span class="expand-icon">⤢ Badi Photo Dekhein</span>
+                </div>
+              </div>
+              <div class="moment-details">
+                <div class="moment-year">CHAPTER 01 &bull; SHURUAT</div>
+                <h3 class="moment-heading">11th Call Wala Rahul</h3>
+                <p class="moment-excerpt">
+                  "Yaad hai Mini? Phone ke us paar aapki saans sun kar bhi mujhe sukoon milta tha. Wo deewana ladka kahin khoya nahi tha, wo aaj bhi aapke liye hi zinda hai."
+                </p>
+                <div class="moment-footer">
+                  <span class="footer-tag">Beparwah Pyaar</span>
+                  <span class="footer-date">Dil Ke Kareeb</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 02: Wild Car Rides & Laughter -->
+          <div class="moment-card tilt-card" data-photo="assets/photo_1.jpg" data-title="Pagalpan Bhari Drives &amp; Hansi" data-desc="Cool sunglasses, hawa mein udte baal, gaane gaana aur aisi be-parwah hansi jisme poori duniya peeche chhut jaati thi.">
+            <div class="moment-glass">
+              <div class="moment-img-container">
+                <img src="assets/photo_1.jpg" alt="Rahul and Mini car selfie" class="moment-img" loading="lazy">
+                <div class="moment-overlay">
+                  <span class="expand-icon">⤢ Badi Photo Dekhein</span>
+                </div>
+              </div>
+              <div class="moment-details">
+                <div class="moment-year">CHAPTER 02 &bull; PAGALPAN</div>
+                <h3 class="moment-heading">Car Drives &amp; Khuli Hansi</h3>
+                <p class="moment-excerpt">
+                  "Un sunglasses aur aapke red lipstick wale smile ke peeche hamari sabse khubsoorat khushi thi. Mini ke saath har safar ek jashn hai."
+                </p>
+                <div class="moment-footer">
+                  <span class="footer-tag">Asli Khushi</span>
+                  <span class="footer-date">Raste Aur Hum</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 03: Traditions & Royalty -->
+          <div class="moment-card tilt-card" data-photo="assets/photo_3.jpg" data-title="Riwayati Libaas &amp; Shahi Andaaz" data-desc="Festive kapdon mein ek doosre ke bagal mein khade hona. Lag raha tha jaise kismat ne hum dono ko ek doosre ke liye hi banaya hai.">
+            <div class="moment-glass">
+              <div class="moment-img-container">
+                <img src="assets/photo_3.jpg" alt="Rahul and Mini in traditional attire" class="moment-img" loading="lazy">
+                <div class="moment-overlay">
+                  <span class="expand-icon">⤢ Badi Photo Dekhein</span>
+                </div>
+              </div>
+              <div class="moment-details">
+                <div class="moment-year">CHAPTER 03 &bull; JASHN</div>
+                <h3 class="moment-heading">Riwayat &amp; Shahi Shaan</h3>
+                <p class="moment-excerpt">
+                  "Kurte aur sharara mein jab aap mere saath khadi thi na Mini, mujhe laga main duniya ka sabse khush-naseeb insaan hoon. Aap meri shaan hain."
+                </p>
+                <div class="moment-footer">
+                  <span class="footer-tag">Mera Garv</span>
+                  <span class="footer-date">Ek Saath Khade</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 04: Leaning on Shoulder / Night Sky -->
+          <div class="moment-card tilt-card" data-photo="assets/photo_2.jpg" data-title="Mera Kaandha, Aapka Sukoon" data-desc="Raat ke sannate mein aapka sar mere kandhe par. Jahan saari duniya ka shor tham jata hai aur bas hamara dil dhadakta hai.">
+            <div class="moment-glass">
+              <div class="moment-img-container">
+                <img src="assets/photo_2.jpg" alt="Mini resting on Rahul's shoulder at night" class="moment-img" loading="lazy">
+                <div class="moment-overlay">
+                  <span class="expand-icon">⤢ Badi Photo Dekhein</span>
+                </div>
+              </div>
+              <div class="moment-details">
+                <div class="moment-year">CHAPTER 04 &bull; PANAAH</div>
+                <h3 class="moment-heading">Mera Kaandha, Aapka Aashiyana</h3>
+                <p class="moment-excerpt">
+                  "Jab Mini mere kaandhe par sar rakhti hain, toh saare dukh mit jaate hain. Yeh kaandha hamesha Mini ke sar ko sambhalne ke liye bana hai."
+                </p>
+                <div class="moment-footer">
+                  <span class="footer-tag">Aman &amp; Sukoon</span>
+                  <span class="footer-date">Sitaron Ke Neeche</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION 03: THE UNMASKING & DIL KI BAAT (RESPECTFUL HINGLISH)
+         ================================================================= -->
+    <section class="letter-motion-section" id="letter">
+      <div class="container">
+        
+        <div class="letter-glass-portal">
+          
+          <div class="portal-header">
+            <div class="portal-badge">MERI MINI KE LIYE UNFILTERED SACH</div>
+            <h2 class="portal-title">In 3 Dino Ne Mera Corporate Mask Tod Diya</h2>
+            <div class="portal-divider"></div>
+          </div>
+
+          <!-- Interactive Mask Perspective Switcher -->
+          <div class="mask-toggle-container">
+            <span class="toggle-desc">Dono Pehlu Dekhein:</span>
+            <div class="perspective-switcher" id="perspectiveSwitcher">
+              <button class="persp-btn" data-mode="mask" id="btnMaskView">Office Ka Jhootha Mask</button>
+              <button class="persp-btn active" data-mode="real" id="btnRealView">11th Call Wala Asli Rahul (Dil Se)</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Perspective Content -->
+          <div class="perspective-display" id="perspectiveDisplay">
+            
+            <div class="view-panel view-real active" id="viewReal">
+              <div class="letter-body">
+                <p class="letter-lead">
+                  "Mini, main aapko batana chahta hoon ki in 3 dino mein maine kitna dard mehsus kiya hai. Akela baith kar jab maine socha, toh mujhe samajh aaya ki aapke bina main bilkul khali hoon, bilkul zero."
+                </p>
+
+                <div class="quote-spotlight">
+                  <p class="spotlight-text">
+                    &ldquo;Jab aapne mujhe apni surgery ke baare mein bataya tha na Mini, mere seene mein aag lag gayi thi. Main baar-baar soch raha tha—Kyun hoon main yahan? Kis baat ki naukri, kis baat ki kamai, agar main aapke sabse mushkil waqt mein aapke paas nahi khada ho sakta? Kya main sach mein ek husband/partner kehlaane ke kabil hoon?&rdquo;
+                  </p>
+                  <span class="spotlight-author">&mdash; Rahul Ka Sabse Bada Pachtawa</span>
+                </div>
+
+                <p>
+                  Office ke chakkar mein, corporate ki bheed mein, main ek mask pehan kar ghum raha tha. Fake emotions, fake busy-ness, robotic routine. Par in 3 dino ke sannate ne mera har ek jhooth mita diya. 
+                </p>
+                <p>
+                  Mujhe mera wahi 11th class wala Rahul wapas mil gaya... jo sirf aur sirf apni Mini ke liye jeeta tha. Ab mujhe meri asliyat pata hai. Mujhe pata hai ki main aapke liye kaun hoon aur main aapse kitna be-panaah pyaar karta hoon.
+                </p>
+
+                <!-- Heart Touching Shayari (Aap Tone) -->
+                <div class="shayari-in-letter">
+                  <p>Aapko chaha tha 11th mein bina kisi shart ke,</p>
+                  <p>Aaj bhi rota hoon aapke bina har lamha mar-mar ke...</p>
+                  <p>Ab na koi mask hoga, na koi kaam aap se badhkar hoga,</p>
+                  <p>Mera har ek saans, Mini, sirf aapke naam par hoga.</p>
+                </div>
+
+                <p class="climax-bold">
+                  Aur aakhri aur sabse sachhi baat: Mini, main sach mein aapke bina ek pal bhi nahi jee sakta.
+                </p>
+              </div>
+            </div>
+
+            <div class="view-panel view-mask" id="viewMask">
+              <div class="mask-analysis-card">
+                <h4 class="mask-title">Wo Jhooth Jo Maine Aaj Hamesha Ke Liye Jala Diye:</h4>
+                <div class="mask-points">
+                  <div class="mask-point">
+                    <span class="cross">&times;</span>
+                    <div>
+                      <strong>Corporate Numbness:</strong> Excel sheets aur meetings ko priority dena aur apni Mini ke operation ke waqt unke paas na hona.
+                    </div>
+                  </div>
+                  <div class="mask-point">
+                    <span class="cross">&times;</span>
+                    <div>
+                      <strong>Fake Busy-ness:</strong> Ek nakli mask laga kar thakan ka bahana banana jab meri Mini ko meri aawaaz ki zaroorat thi.
+                    </div>
+                  </div>
+                  <div class="mask-point">
+                    <span class="cross">&times;</span>
+                    <div>
+                      <strong>Jhoothi Tasalli:</strong> Yeh sochna ki 'main kama raha hoon toh theek hai', jabki koi bhi salary hospital bed ke paas haath pakadne ka badal nahi ban sakti.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Letter Sign-off (Aap Tone) -->
+          <div class="portal-signature">
+            <span class="sign-intro">Sirf aur sirf aapka, poori rooh aur dil se,</span>
+            <span class="sign-name">Aapka Rahul</span>
+            <span class="sign-tag">Hamesha aapka 11th-grade wala deewana &bull; Mini Ka Hamesha Ka Saathi</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION 04: 4 PAKKE VAADE (SACRED VOWS FOR MINI)
+         ================================================================= -->
+    <section class="vows-motion-section" id="vows">
+      <div class="container">
+        
+        <div class="section-header center">
+          <div class="motion-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">DIL KE PAKKE VAADE</span>
+          </div>
+          <h2 class="section-title">Mini Se Mere 4 Pakke Vaade</h2>
+          <p class="section-sub">
+            Yeh sirf lafz nahi hain, yeh meri poori zindagi ki qasam hai.
+          </p>
+        </div>
+
+        <div class="vows-3d-grid">
+          
+          <div class="vow-3d-card tilt-card">
+            <div class="vow-inner">
+              <div class="vow-icon-halo">01</div>
+              <h3 class="vow-title">Har Mushkil Mein Aapka Haath Thamana</h3>
+              <p class="vow-text">
+                Duniya ka koi meeting, koi kaam, koi safar mujhe Mini ke paas aane se nahi rok sakta jab unhein meri zaroorat hogi.
+              </p>
+              <div class="vow-accent-line"></div>
+            </div>
+          </div>
+
+          <div class="vow-3d-card tilt-card">
+            <div class="vow-inner">
+              <div class="vow-icon-halo">02</div>
+              <h3 class="vow-title">Bina Mask Ka Asli Rahul</h3>
+              <p class="vow-text">
+                Mini ke samne kabhi koi fake smile ya mask nahi hoga. Hamesha wahi sachha, narm aur pyaar se bhara Rahul rahega.
+              </p>
+              <div class="vow-accent-line"></div>
+            </div>
+          </div>
+
+          <div class="vow-3d-card tilt-card">
+            <div class="vow-inner">
+              <div class="vow-icon-halo">03</div>
+              <h3 class="vow-title">11th Class Wala Deewanapan</h3>
+              <p class="vow-text">
+                Mini ko har din usi deewanepan aur butterflies ke saath chahoonga jaise school ke dino mein chahta tha.
+              </p>
+              <div class="vow-accent-line"></div>
+            </div>
+          </div>
+
+          <div class="vow-3d-card tilt-card">
+            <div class="vow-inner">
+              <div class="vow-icon-halo">04</div>
+              <h3 class="vow-title">Mini Ka Hamesha Ka Shield</h3>
+              <p class="vow-text">
+                Ek aisa partner aur husband ban kar rahunga jo Mini ki muskaan ki hifazat kare aur unhein kabhi akela na chhodne de.
+              </p>
+              <div class="vow-accent-line"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION 05: INTERACTIVE LOVE VAULT FOR MINI & RAHUL
+         ================================================================= -->
+    <section class="vault-section" id="vault">
+      <div class="container">
+        
+        <div class="vault-card">
+          
+          <div class="vault-top">
+            <div class="motion-badge">
+              <span class="badge-dot"></span>
+              <span class="badge-text">DIL KI DHADKAN &bull; MINI TO RAHUL</span>
+            </div>
+            <h2 class="vault-heading">Mini, Rahul Ko Ek Dhadkan Bheinjiye</h2>
+            <p class="vault-sub">
+              Neeche diye gaye button par tap karke hamari screen par sitaron ke fireworks ke saath Rahul ke paas apni dhadkan bheinjiye.
+            </p>
+          </div>
+
+          <div class="vault-pulse-stage">
+            <button class="kinetic-heart-btn magnetic" id="kineticHeartBtn">
+              <span class="pulse-ring ring-a"></span>
+              <span class="pulse-ring ring-b"></span>
+              <span class="big-heart-symbol">&hearts;</span>
+              <span class="btn-text">Mini Ki Dhadkan Bheinjiye</span>
+              <span class="heart-metric" id="heartCountBadge">0 Dhadkanein</span>
+            </button>
+          </div>
+
+          <!-- Private Note Response Capsule -->
+          <div class="response-capsule">
+            <h4 class="capsule-title">Aapke Dil Ki Baat Likhein:</h4>
+            <div class="input-glow-wrapper">
+              <textarea id="vaultNoteInput" class="vault-textarea" placeholder="Mini, jo bhi aapke dil mein hai likhiye... (yeh note aapke browser mein hamesha safe rahega)"></textarea>
+            </div>
+            <div class="capsule-btn-row">
+              <button class="btn-glow-primary save-vault-btn" id="saveVaultNoteBtn">
+                <span>Vault Mein Save Karein &amp; Fireworks Jalaayein ✨</span>
+              </button>
+              <span class="vault-status-text" id="vaultStatusText"></span>
+            </div>
+
+            <div class="saved-vault-notes" id="vaultNotesList"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         GRAND FINALE SECTION: LISTEN IN MUSIC WHAT I FEEL IN 3 DAYS
+         Starts at 1:00 min (60 seconds)
+         ================================================================= -->
+    <section class="music-finale-section" id="musicFinale">
+      <div class="container">
+        
+        <div class="finale-card-glow">
+          <div class="finale-ambient-orb"></div>
+          
+          <div class="finale-header">
+            <span class="finale-badge">🎵 THE SOULFUL CLIMAX &bull; 1:00 MINUTE</span>
+            <h2 class="finale-title">Listen in Music: What I Feel in 3 Days</h2>
+            <div class="finale-divider"></div>
+            <p class="finale-desc">
+              Mini, jo baatein main lafzon mein poori tarah bayan nahi kar paya... wo sab is gaane ki har ek dhun mein hai.
+              Maine in 3 dino mein kya mehsus kiya, kitna akelapan aur kitna be-panaah pyaar... wo sab yahan suniye.
+            </p>
+          </div>
+
+          <!-- The Grand Music Action Button -->
+          <div class="finale-action-stage">
+            <button class="grand-music-btn magnetic" id="playFinaleSongBtn">
+              <span class="btn-pulse-wave"></span>
+              <span class="grand-play-icon" id="finaleBtnPlayIcon">▶</span>
+              <span class="grand-btn-text" id="finaleBtnText">listen in music what i feel in 3 days</span>
+              <span class="grand-time-tag">Starts at 1:00</span>
+            </button>
+            
+            <a href="https://www.youtube.com/watch?v=IfEMfcYbFt8&t=60s" target="_blank" rel="noopener noreferrer" class="youtube-external-link magnetic" title="Open in YouTube">
+              <span>Open in YouTube ↗</span>
+            </a>
+          </div>
+
+          <!-- Live In-Page Music Equalizer Bar (Active when song is playing) -->
+          <div class="finale-music-theater" id="finaleMusicTheater">
+            <div class="theater-bar">
+              <div class="theater-waves">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="theater-song-info">
+                <span class="song-title-live">Labb Par Aaye &bull; Bandish Bandits</span>
+                <span class="song-time-live">Playing from 1:00 min</span>
+              </div>
+              <button class="theater-toggle-btn" id="theaterToggleBtn">Pause</button>
+            </div>
+          </div>
+
+          <div class="finale-sign">
+            <span class="finale-sign-quote">&ldquo;Sirf aapke liye, aakhri saans tak...&rdquo;</span>
+            <span class="finale-sign-author">&mdash; Aapka Rahul (11th Class Wala)</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PHOTO EXPAND MODAL -->
+  <div class="photo-modal" id="photoModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close photo modal">&times;</button>
+      <div class="modal-image-wrap">
+        <img src="" alt="Enlarged moment of Rahul and Mini" id="modalImg" class="modal-img">
+        <div class="modal-light-leak"></div>
+      </div>
+      <div class="modal-caption-bar">
+        <h4 id="modalTitle" class="modal-title">Moment Title</h4>
+        <p id="modalDesc" class="modal-desc">Moment Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="motion-footer">
+    <div class="container footer-layout">
+      <div class="footer-monogram">R &hearts; M</div>
+      <div class="footer-names">RAHUL &bull; MINI</div>
+      <p class="footer-quote">"In 3 dino ke sannate ne mujhe sikhaya ki Mini ke bina meri koi dunya nahi hai."</p>
+      <div class="footer-bottom-row">
+        <span>Designed with infinite respect, Hinglish love &amp; motion graphics by Rahul for his Mini</span>
+        <span>Always &amp; Forever &bull; 11th Class Se Aakhri Saans Tak</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
